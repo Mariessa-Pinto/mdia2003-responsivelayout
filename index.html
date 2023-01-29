@@ -13,6 +13,12 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu&display=swap" rel="stylesheet">
 
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -23,33 +29,36 @@
 <body class="page">
   <!--Top Half-->
   <header class="page__header">
-    <div class="page__header__row">
-      <div class="page__header__column__logo">
+    <div class="page__header__row row m-col-6">
+      <div class="page__header__column__logo col" >
         <img class="nav-logo" src="img/placeholder.svg" alt="metrolics logo">
       </div> 
-      <div class="page__header__column">
+      <div class="page__header__column col s-hide">
         <img class="nav-icons" src="img/placeholder.svg" alt="home icon">
         <h4>Home</h4>
       </div>
-      <div class="page__header__column">
+      <div class="page__header__column col s-hide">
         <img class="nav-icons" src="img/placeholder.svg" alt="page icon">
         <h4>Pages</h4>
       </div>
-      <div class="page__header__column">
+      <div class="page__header__column col s-hide">
         <img class="nav-icons" src="img/placeholder.svg" alt="blog icon">
         <h4>Blog</h4>
       </div>
-      <div class="page__header__column">
+      <div class="page__header__column col s-hide">
         <img class="nav-icons" src="img/placeholder.svg" alt="portfolio icon">
         <h4>Portfolio</h4>
       </div>
-      <div class="page__header__column">
+      <div class="page__header__column col s-hide">
         <img class="nav-icons" src="img/placeholder.svg" alt="home icon">
         <h4>Home</h4>
         </div>
+        <div class="page__header__column col m-hide l-hide">
+          <img class="nav-hamburger" src="img/placeholder.svg" alt="hamburger">
+          </div>
       </div>
     </header>
-  <section class="page__slider">
+  <section class="page__slider s-hide">
     <div class="page__slider__row">
       <div class="page__slider__column">
         <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
@@ -71,8 +80,8 @@
     </div>
   </section>
   <section class="page__intro">
-    <div class="page__intro__row">
-      <div class="page__intro__column">
+    <div class="page__intro__row row">
+      <div class="page__intro__column col">
         <h1 class="main-heading">
           Hey guys! This is the Metrolics theme. It sports a responsive layout with a mobile layout.
         </h1>
@@ -80,14 +89,14 @@
     </div>
   </section>
   <section class="page__about">
-    <div class="page__about__row">
-      <div class="page__about__column">
+    <div class="page__about__row row">
+      <div class="page__about__column col">
         <h2 class="sub-heading">
           Things That We Do 
         </h2>
         <p class="text">Ask us what we can do for you</p>
       </div>
-      <div class="page__about__column">
+      <div class="page__about__column col">
         <img src="img/placeholder.svg" alt="web solutions light bulb icon">
         <h3 class="sub-heading--about">Web Solutions</h3>
         <p class="text">We are fairly small, flexible design studio that designs for print
@@ -95,7 +104,7 @@
           need to create a brand from scratch, including marketing materials 
         </p>
       </div>
-      <div class="page__about__column">
+      <div class="page__about__column col">
         <img src="img/placeholder.svg" alt="photography landscape icon">
         <h3 class="sub-heading--about">Photography</h3>
         <p class="text">We are fairly small, flexible design studio that designs for print
@@ -103,7 +112,7 @@
           need to create a brand from scratch, including marketing materials 
         </p>
       </div>
-      <div class="page__about__column">
+      <div class="page__about__column col">
         <img src="img/placeholder.svg" alt="web development wheels turning icon">
         <h3 class="sub-heading--about">Web Development</h3>
         <p class="text">We are fairly small, flexible design studio that designs for print
@@ -111,7 +120,7 @@
           need to create a brand from scratch, including marketing materials 
         </p>
       </div>
-      <div class="page__about__column">
+      <div class="page__about__column col">
         <img src="img/placeholder.svg" alt="web design pencil icon">
         <h3 class="sub-heading--about">Web Design</h3>
         <p class="text">We are fairly small, flexible design studio that designs for print
@@ -122,38 +131,52 @@
     </div>
   </section>
   <section class="page__updates">
-    <div class="page__updates__row">
-      <div class="page__updates__column">
+    <div class="page__updates__row row">
+      <div class="page__updates__column col">
         <h2 class="sub-heading">What's up Lately</h2>
         <p class="text">Read up on our latest work</p>
       </div>
-      <div class="page__updates__column">
+      <div class="page__updates__column col">
         <img src="img/placeholder.svg" alt="wheel turning">
       </div>
-      <div class="page__updates__column">
+      <div class="page__updates__column col">
         <img src="img/placeholder.svg" alt="wheel turning">
       </div>
-      <div class="page__updates__column">
+      <div class="page__updates__column col">
+        <img src="img/placeholder.svg" alt="'wheel turning">
+      </div>
+      <div class="page__updates__column col m-hide l-hide">
         <img src="img/placeholder.svg" alt="'wheel turning">
       </div>
     </div>
   </section>
   <!-- Bottom Half -->
   <div class="page__projects">
-    <div class="page__projects__headings">
-      <h2>Our Latest Projects</h2>
-      <p></p>
-    </div>
-    <div class="page__projects__item">
-      <img class="page__projects__img" src="img/placeholder.svg" alt="transparent blur over image">
-      <img class="page__projects__img" src="img/placeholder.svg" alt="wheel turning">
-      <img class="page__projects__img" src="img/placeholder.svg" alt="wheel turning">
-      <img class="page__projects__img" src="img/placeholder.svg" alt="wheel turning">
-      <img class="page__projects__img" src="img/placeholder.svg" alt="wheel turning">
-      <img class="page__projects__img" src="img/placeholder.svg" alt="wheel turning">
-    </div>
+    <div class="page__projects__headings row">
+      <div class="col">
+        <h2>Our Latest Projects</h2>
+        <p></p>
+      </div>
+      <div class="page__projects__item col">
+        <img class="page__projects__img" src="img/placeholder.svg" alt="transparent blur over image">
+      </div>
+      <div class="page__projects__item col">
+        <img class="page__projects__img" src="img/placeholder.svg" alt="wheel turning">
+      </div>
+      <div class="page__projects__item col">
+        <img class="page__projects__img" src="img/placeholder.svg" alt="wheel turning">
+      </div>
+      <div class="page__projects__item col">
+        <img class="page__projects__img" src="img/placeholder.svg" alt="wheel turning">
+      </div>
+      <div class="page__projects__item col">
+        <img class="page__projects__img" src="img/placeholder.svg" alt="wheel turning">
+      </div>
+      <div class="page__projects__item col">
+        <img class="page__projects__img" src="img/placeholder.svg" alt="wheel turning">
+      </div>
   </div>
-  <div class="page__misc">
+  <div class="page__misc s-hide">
     <div class="page__misc__headings">
       <h2>Thingsofabove</h2>
       <p></p>
@@ -222,67 +245,87 @@
     </div>
   </div>
   <footer class="page__footer">
-    <div class="page__footer__scrollmenu">
-      <div class="page__footer__intro">
+    <div class="page__footer__scrollmenu row">
+      <div class="page__footer__intro col">
         <img src="img/placeholder.svg" alt="profile pic">
         <h4>Peewee Herman</h4>
         <p></p>
       </div>
-      <div class="page__footer__slider">
+      <div class="page__footer__slider col">
         <div class="page__footer__slider__indicator"></div>
       </div>
     </div>
-    <div class="page__footer__four-columns">
-      <div class="page__footer__column">
-        <h4>About Us</h4>
-        <p></p>
-        <div class="page__footer__column__socials">
+    <div class="page__footer__four-columns row">
+      <div class="page__footer__column col">
+        <h4 class="s-hide">About Us</h4>
+        <p class="s-hide"></p>
+        <div class="page__footer__column__socials col">
           <a href=""><img src="img/placeholder.svg" alt="facebook"></a>
+        </div>
+        <div class="page__footer__column__socials col">
           <a href=""><img src="img/placeholder.svg" alt="google"></a>
+        </div>
+        <div class="page__footer__column__socials col">
           <a href=""><img src="img/placeholder.svg" alt="twitter"></a>
+        </div>
+        <div class="page__footer__column__socials col">
           <a href=""><img src="img/placeholder.svg" alt="instagram"></a>
+        </div>
+        <div class="page__footer__column__socials col">
           <a href=""><img src="img/placeholder.svg" alt="wifi"></a>
         </div>
       </div>
-      <div class="page__footer__column">
+      <div class="page__footer__column row s-hide">
         <h4>Flickr Photos</h4>
-        <div class="page__footer__column__imgs">
+        <div class="page__footer__column__imgs col">
           <img src="img/placeholder.svg" alt="side minion">
+        </div>
+        <div class="page__footer__column__imgs col">
           <img src="img/placeholder.svg" alt="lady minion">
+        </div>
+        <div class="page__footer__column__imgs col">
           <img src="img/placeholder.svg" alt="horn minion">
+        </div>
+        <div class="page__footer__column__imgs col">
           <img src="img/placeholder.svg" alt="santa minion">
+        </div>
+        <div class="page__footer__column__imgs col">
           <img src="img/placeholder.svg" alt="top head minion">
+        </div>
+        <div class="page__footer__column__imgs col">
           <img src="img/placeholder.svg" alt="banana minion">
         </div>
       </div>
-      <div class="page__footer__column">
+      <div class="page__footer__column row">
+        <div class="page__footer__column__header col">
         <h4>Recent Tweets</h4>
-        <div class="page__footer__column__twitter-feed">
-          <div class="page__footer__column__twitter-feed__post">
-            <img src="img/placeholder.svg" alt="twitter">
-            <p></p>
-          </div>
-          <div class="page__footer__column__twitter-feed__post">
-            <img src="img/placeholder.svg" alt="twitter">
-            <p></p>
-          </div>
+        </div>
+        <div class="page__footer__column__twitter-feed__post col">
+          <img src="img/placeholder.svg" alt="twitter">
+          <p></p>
+        </div>
+        <div class="page__footer__column__twitter-feed__post col">
+          <img src="img/placeholder.svg" alt="twitter">
+          <p></p>
         </div>
       </div>
-      <div class="page__footer__column">
-        <h4>Newsletter</h4>
-        <div class="page__footer__column__newsletter">
+      <div class="page__footer__column row s-hide">
+        <h4 class="page__footer__column__header row">Newsletter</h4>
+        <div class="page__footer__column__newsletter col">
           <p></p>
+        </div>
+        <div class="page__footer__column__newsletter col">
           <input type="email" placeholder="Enter your email..." name="browser" id="browser">
           <input type="image" src="img/placeholder.svg" alt="send email">
         </div>
       </div>
     </div>
-    <div class="page__footer__decoration">
-      <div class="page__footer__decoration__box"></div>
-      <div class="page__footer__decoration__box"></div>
-      <div class="page__footer__decoration__box"></div>
-      <div class="page__footer__decoration__box"></div>
-      <div class="page__footer__decoration__box"></div>
+    <div class="page__footer__decoration row">
+      <div class="page__footer__decoration__box col"></div>
+      <div class="page__footer__decoration__box col"></div>
+      <div class="page__footer__decoration__box col"></div>
+      <div class="page__footer__decoration__box col"></div>
+      <div class="page__footer__decoration__box col"></div>
     </div> 
   </footer>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
