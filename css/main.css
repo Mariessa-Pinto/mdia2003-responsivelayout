@@ -152,13 +152,49 @@ p {
 /* 2.1 Core layout */
 
 .row {
-	display: gird;
+	display: grid;
 	row-gap: 1rem;
 }
 
 .col {
 	position: relative;
 	background-color: rgb(242, 230, 177);
+
+}
+
+.logo {
+  max-height: 2.5rem;
+ 
+}
+
+/* main nav mobile first */
+.main-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-nav__item {
+  display: block;
+  position: relative;
+  width: 100%;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-align: left;
+  color: white;
+  line-height: 4rem;
+  background-repeat: no-repeat;
+}
+
+.main-nav__item::after {
+  content: ">";
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+}
+
+.main-nav__item.active::after {
+  content: "";
 }
 
 
@@ -174,75 +210,70 @@ p {
       row-gap: 1.5rem;
       margin: 0 auto;
     }
-    .grid {
-      display: grid;
-      column-gap: 0.5rem;
-      row-gap: 0.5rem;
-    }
-    
-    .m-col-6 {
-      max-height: 3rem;
-    }
+   
     .logo {
       max-height: 3rem;
       position: static;
+      max-width: 30rem;
     }
-    .m-hide {
-      background-repeat: no-repeat;
-      background-size: 1.8rem;
-      background-position: center center;
-      background-color: #2a6eeb;
-      position: absolute;
-      right: 1rem;
-      top: 0rem;
-      z-index: 1;
-      font-size: 0rem;
-      padding: 1.5rem;
+    .nav-logo {
+      max-height: 3rem;
     }
+   
+   
 }
 
 /* 2.3 Medium and up */
 
 @media screen and (min-width: 40em) {
     .row {
+      width: 85vw;
       max-width: 70rem;
       column-gap: 1.5rem;
       row-gap: 1.5rem;
       margin: 0 auto;
+      margin: 0 auto 3rem auto;
     }
-    .grid {
-      display: grid;
-      column-gap: 0.5rem;
-      row-gap: 0.5rem;
+   
+    .row-span {
+      grid-column-start: 1;
+      grid-column-end: -1;
     }
-    .m-col-2 {
-      grid-template-columns: 1fr 1fr;
-    }
-    .m-col-3 {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .m-col-4 {
-      grid-template-columns: repeat(4, 1fr);
-    }
-    .m-col-5 {
-      grid-template-columns: repeat(5, 1fr);
-    }
-    .m-col-6 {
-      grid-template-columns: repeat(6, 1fr);
-    }
+
     .m-1-2 {
       grid-template-columns: 1fr 2fr;
     }
-    .m-hide {
+    .mobile-nav {
       display: none;
     }
+   
+    .nav-logo {
+      max-height: 3rem;
+    }
+    .main-nav {
+      display: flex;
+      flex-direction: row;
+    }
+    .main-nav__item {
+      padding: 4rem 1rem 0rem 0.5rem;
+      line-height: 2rem;
+      font-size: 0.8rem;
+      text-align: left;
+      background-color: rgb(184, 184, 184);
+      background-position-x: center;
+      background-position-y: center;
+      background-size: 2.3rem, 1.4rem;
+    }
+   
 }
 
 /* 2.4 Medium only */ 
 
 @media screen and (min-width: 40em) and
 (max-width: 63.9375em) {
-
+    .m-1-2 {
+      grid-template-columns: 1fr 2fr;
+    }
 }
 
 /* 2.5 Large screens and up */
@@ -267,14 +298,75 @@ p {
       display: none;
     }
 
+    .mobile-nav {
+      display: none;
+    }
+    .m-1-2 {
+      grid-template-columns: 1fr 2fr;
+    }
+   
+    .nav-logo {
+      max-height: 3rem;
+    }
+    .main-nav {
+      display: flex;
+      flex-direction: row;
+    }
+    .main-nav__item {
+      padding: 4rem 1rem 0rem 0.5rem;
+      line-height: 2rem;
+      font-size: 0.8rem;
+      text-align: left;
+      background-color: rgb(184, 184, 184);
+      background-position-x: center;
+      background-position-y: center;
+      background-size: 2.3rem, 1.4rem;
+    }
+   
 }
 
 /* Large only */ 
 
 @media screen and (min-width: 64em) and
 (max-width: 74.9375em) {
-
+    .m-1-2 {
+      grid-template-columns: 1fr 2fr;
+    }
 }
+
+
+
+/* ==========================================================================
+   THEME
+   ========================================================================== */
+
+   /* main nav colours and icons */
+
+   .main-nav__item:nth-child(1) {
+    background-color: #25c389;
+    
+   }
+
+   .main-nav__item:nth-child(2) {
+    background-color: #ffb901;
+    
+   }
+
+   .main-nav__item:nth-child(3) {
+    background-color: #de6262;
+    
+   }
+
+   .main-nav__item:nth-child(4) {
+    background-color: #1691bd;
+ 
+   }
+
+   .main-nav__item:nth-child(5) {
+    background-color: #166ba2;
+   
+   }
+
 
 
 /* ==========================================================================
