@@ -178,12 +178,16 @@ p {
   display: block;
   position: relative;
   width: 100%;
+  padding: 1rem 1rem 1rem;
   font-size: 1.3rem;
   text-decoration: none;
   text-align: left;
   color: white;
   line-height: 4rem;
   background-repeat: no-repeat;
+  background-position-x: 44%;
+  background-position-y: center;
+  background-size: 3.1rem, 1.7rem;
 }
 
 .main-nav__item::after {
@@ -204,6 +208,9 @@ p {
     .s-hide {
     display: none;
     }
+    .s-show {
+      display: flex;
+    }
     .row {
       max-width: 40rem;
       column-gap: 1.5rem;
@@ -219,6 +226,24 @@ p {
     .nav-logo {
       max-height: 3rem;
     }
+
+  .main-nav__item::after {
+    display: inline-block;
+    position: static;
+    padding-left: 1rem;
+  }
+  .mobile-nav {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 1;
+    font-size: 0rem;
+    padding: 2.5rem;
+    background-repeat: no-repeat;
+    background-size: 1.8rem;
+    background-position: center center;
+    background-color: #2a6eeb;
+  }
    
    
 }
