@@ -203,7 +203,7 @@ p {
       max-height: 3rem;
       position: static;
     }
-    .m-hide {
+    /*.m-hide {
       background-repeat: no-repeat;
       background-size: 1.8rem;
       background-position: center center;
@@ -214,7 +214,7 @@ p {
       z-index: 1;
       font-size: 0rem;
       padding: 1.5rem;
-    }
+    }*/
 }
 
 /* 2.3 Medium and up */
@@ -248,6 +248,12 @@ p {
     }
     .m-1-2 {
       grid-template-columns: 1fr 2fr;
+    }
+    .m-col-span-5 {
+      grid-template-columns: 1fr 5fr;
+    }
+    .m-col-span5-1 {
+      grid-template-columns: 5fr 1fr;
     }
     .m-hide {
       display: none;
