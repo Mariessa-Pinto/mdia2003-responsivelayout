@@ -16,6 +16,7 @@
   3. MODULES
   4. STATES
   5. THEME
+      1.1 Footer
   6. UTILITY CLASSES
   7. PRINT
 
@@ -154,6 +155,7 @@ p {
 .row {
 	display: grid;
 	row-gap: 1rem;
+  align-items: center;
 }
 
 .col {
@@ -175,8 +177,17 @@ p {
       margin: 0 auto;
     }*/
 
+    .s-col-2 {
+      grid-template-columns: 1fr 1fr;
+    }
     .s-col-5 {
       grid-template-columns: repeat(5, 1fr);
+    }
+    .s-col-span-5 {
+      grid-template-columns: 1fr 5fr;
+    }
+    .s-col-span-2 {
+      grid-template-columns: 1fr 2fr;
     }
 
     .grid {
@@ -286,8 +297,19 @@ p {
    5. THEME
    ========================================================================== */
 
+
+   /* 1.1 Footer */
+
+  .page__footer__intro {
+    align-items: flex-start;
+  }
+  
 .page__footer__column__twitter-icon {
-  width: 4rem;
+  width: 3rem;
+}
+
+.page__footer__column__twitter__tweet-handle {
+  color: lightblue;
 }
 
 .page__footer__decoration__box-1 {
