@@ -252,8 +252,14 @@ p {
     .m-col-span-5 {
       grid-template-columns: 1fr 5fr;
     }
+    .m-col-8 {
+      grid-template-columns: repeat(8, 1fr);
+    }
     .m-col-span5-1 {
       grid-template-columns: 5fr 1fr;
+    }
+    .m-col-span-6 {
+      grid-template-columns: 1fr 6fr;
     }
     .m-hide {
       display: none;
@@ -301,14 +307,48 @@ p {
 
 /* ==========================================================================
    5. THEME
-   ========================================================================== */
+========================================================================== */
 
 
-   /* 1.1 Footer */
+/* 1.1 Footer */
 
-  .page__footer__intro {
-    align-items: flex-start;
-  }
+.page__footer {
+  background-color: #16242f;
+  color: white;
+  padding: 0;
+}
+
+.page__footer__column__socials {
+  padding: 0;
+  gap: 0;
+  margin: 0;
+  column-gap: 0;
+}
+
+.page__footer__scroll-header {
+  text-align: left;
+}
+
+.page__footer__column__social-icon {
+  padding: 0;
+  gap: 0;
+  margin: 0;
+}
+
+.page___footer__column__img-col {
+  padding: 0;
+  margin: 0;
+}
+
+.page__footer__intro {
+  align-items: flex-start;
+}
+
+.page__footer__column__imgs {
+  padding: 0;
+  gap: 0;
+  margin: 0;
+}
   
 .page__footer__column__twitter-icon {
   width: 3rem;
@@ -318,25 +358,53 @@ p {
   color: lightblue;
 }
 
+.page__footer__column__news__input {
+  padding: 0;
+  gap: 0;
+  margin: 0;
+}
+
+.page__footer__column__news__input-email {
+  height: 100%;
+  background-color: #de6262;
+  border: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+.page__footer__decoration {
+  padding: 0;
+  gap: 0;
+  margin: 0;
+}
+
 .page__footer__decoration__box-1 {
   background-color: palegreen;
+
  }
 
 .page__footer__decoration__box-2 {
   background-color: gold;
+ 
  }
 
 .page__footer__decoration__box-3 {
   background-color: palevioletred;
+
  }
 
 .page__footer__decoration__box-4 {
   background-color: lightblue;
+
  }
 
 .page__footer__decoration__box-5 {
  background-color: lightskyblue;
+
 }
+
 
 /* ==========================================================================
    Helper classes
