@@ -203,18 +203,6 @@ p {
       max-height: 3rem;
       position: static;
     }
-    /*.m-hide {
-      background-repeat: no-repeat;
-      background-size: 1.8rem;
-      background-position: center center;
-      background-color: #2a6eeb;
-      position: absolute;
-      right: 1rem;
-      top: 0rem;
-      z-index: 1;
-      font-size: 0rem;
-      padding: 1.5rem;
-    }*/
 }
 
 /* 2.3 Medium and up */
@@ -261,21 +249,24 @@ p {
     .m-col-span-6 {
       grid-template-columns: 1fr 6fr;
     }
-    .m-hide {
-      display: none;
-    }
+  
 }
 
 /* 2.4 Medium only */ 
 
 @media screen and (min-width: 40em) and
 (max-width: 63.9375em) {
-
+  .m-hide {
+    display: none;
+  }
 }
 
 /* 2.5 Large screens and up */
 
 @media screen and (min-width: 64em) {
+    .row {
+      max-width: 80rem;
+    }
     .l-col-2 {
       grid-template-columns: 1fr 1fr;
     }
@@ -291,9 +282,16 @@ p {
     .l-col-6 {
       grid-template-columns: repeat(6, 1fr);
     }
+    .l-col-14 {
+      grid-template-columns: repeat(14, 1fr);
+    }
     .l-hide {
       display: none;
     }
+    .page__footer__slider__image {
+      max-width: 70rem;
+    }
+
 
 }
 
@@ -318,11 +316,49 @@ p {
   padding: 0;
 }
 
+.page__footer__column__lg {
+  padding: 0;
+  gap: 0;
+  margin: 0;
+}
+
+.page__footer__four-columns {
+  align-items: flex-start;
+  height: 100%;
+}
+.page__footer__column {
+  align-items: flex-start;
+}
+
 .page__footer__column__socials {
   padding: 0;
   gap: 0;
   margin: 0;
   column-gap: 0;
+}
+
+.page__footer__column__newsletter {
+  padding: 0;
+  margin: 0;
+}
+
+.page__footer__4-col {
+  padding: 0;
+  gap: 0;
+  column-gap: 0;
+}
+
+.page__footer__column__twitter-post {
+  padding: 0;
+}
+
+.page__footer__column__header {
+  padding: 0;
+  gap: 0;
+}
+
+.page__footer__column__twitter-feed__post {
+  padding: 0;
 }
 
 .page__footer__scroll-header {
@@ -377,7 +413,6 @@ p {
 .page__footer__decoration {
   padding: 0;
   gap: 0;
-  margin: 0;
 }
 
 .page__footer__decoration__box-1 {
