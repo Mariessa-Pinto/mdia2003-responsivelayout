@@ -239,6 +239,7 @@ p {
     z-index: 1;
     font-size: 0rem;
     padding: 2.5rem;
+    background-image: url(../icons/bars-solid.svg);
     background-repeat: no-repeat;
     background-size: 1.8rem;
     background-position: center center;
