@@ -328,6 +328,7 @@ p {
 }
 .page__footer__column {
   align-items: flex-start;
+  height: 100%;
 }
 
 .page__footer__column__socials {
