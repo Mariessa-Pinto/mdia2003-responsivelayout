@@ -112,11 +112,11 @@ main,
 section,
 footer,
 header {
-  outline: 1px solid #css;
+  outline: 1px solid #ccc;
   min-height: 1rem;
   padding: 1rem;
 
-} */ 
+}  */
 
 
 *,
@@ -240,8 +240,6 @@ p {
     .row {
       max-width: 40rem;
       column-gap: 1.5rem;
-      row-gap: 1.5rem;
-      margin: 0 auto 5rem;
     }
     .logo {
       max-height: 5rem;
@@ -269,7 +267,6 @@ p {
       background-position: center center;
       background-color: #2a6eeb;
   }
-
   .page__footer__column__social-icon {
     padding: 1rem;
   }
@@ -278,34 +275,30 @@ p {
     min-height: 1rem;
     column-gap: 0;
   }
-
+  .row2 {
+    row-gap: 1.5rem;
+    margin: 0 auto 5rem;
+  }
 }
 
 /* 2.3 Medium and up */
 
 @media screen and (min-width: 40em) {
     .row {
-
-      width: 80vw;
       max-width: 80rem;
-
       column-gap: 1.5rem;
-      row-gap: 1.5rem;
       margin: 0 auto;
     }
-   
     .row-span {
       grid-column-start: 1;
       grid-column-end: -1;
     }
-
     .m-col-2 {
       grid-template-columns: 1fr 1fr;
     }
     .m-col-3 {
       grid-template-columns: repeat(3, 1fr);
     }
-
     .m-1-2 {
       grid-template-columns: 1fr 2fr;
     }
@@ -341,16 +334,13 @@ p {
       background-position-y: center;
       background-size: 2.3rem, 1.4rem;
     }
-
     .page__slider {
       background-color: rgb(184, 184, 184);
       margin-top: 0;
     }
     .m-2-1 {
       background-color: rgb(184, 184, 184);
-      
     }
-
     .m-2-3 {
       background-color: rgb(184, 184, 184);
     }
@@ -358,7 +348,10 @@ p {
       min-height: 1rem;
       column-gap: 0;
       padding: 0 3rem;
-
+    }
+    .row2 {
+      row-gap: 1.5rem;
+      width: 80vw;
     }
 }
 
@@ -385,7 +378,6 @@ p {
     background-color: rgb(184, 184, 184);
     
   }
-
   .m-2-3 {
     background-color: rgb(184, 184, 184);
   }
@@ -432,16 +424,12 @@ p {
     .page__footer__slider__image {
       max-width: 70rem;
     }
-
-
     .mobile-nav {
       display: none;
     }
     .m-1-2 {
       grid-template-columns: 1fr 2fr;
     }
-   
-   
     .main-nav {
       display: flex;
       flex-direction: row;
@@ -456,17 +444,13 @@ p {
       background-position-y: center;
       background-size: 2.3rem, 1.4rem;
     }
-
-
     .page__slider {
       background-color: rgb(184, 184, 184);
       margin-top: 0;
     }
     .m-2-1 {
-      background-color: rgb(184, 184, 184);
-      
+      background-color: rgb(184, 184, 184); 
     }
-
     .m-2-3 {
       background-color: rgb(184, 184, 184);
     }
@@ -479,21 +463,16 @@ p {
       padding: 3rem 3rem 3rem 1rem;
       align-items: flex-start;
       height: 100%;
-
     }
-   
 }
 
 /* Large only */ 
 
 @media screen and (min-width: 64em) and
 (max-width: 74.9375em) {
-    
-
   .m-1-2 {
       grid-template-columns: 1fr 2fr;
     }
-
     .page__slider {
      
       background-color: rgb(184, 184, 184);
@@ -503,13 +482,10 @@ p {
       background-color: rgb(184, 184, 184);
       
     }
-
     .m-2-3 {
       background-color: rgb(184, 184, 184);
      
     }
-
-
 }
 
 
@@ -568,12 +544,6 @@ p {
   padding: 3rem;
 }
 
-/* .page__footer__column__lg {
-  padding: 0;
-  gap: 0;
-  margin: 0;
-} */
-
 
 .page__footer__column__news {
   padding: 1rem;
@@ -591,18 +561,6 @@ p {
   padding: 1rem;
 }
 
-/* .page__footer__column__socials {
-  padding: 0;
-  gap: 0;
-  margin: 0;
-  column-gap: 0;
-}
-
-.page__footer__column__newsletter {
-  padding: 0;
-  margin: 0;
-} */
-
 .page__footer__4-col {
   gap: 0;
 }
@@ -619,9 +577,6 @@ p {
   padding: 1rem;
 }
 
-/* .page__footer__column__twitter-feed__post {
-  padding: 0;
-} */
 
 .page__footer__scroll-header {
   text-align: left;
@@ -631,20 +586,11 @@ p {
   column-gap: 0;
 }
 
-/* .page___footer__column__img-col {
-  padding: 0;
-  margin: 0;
-} */
 
 .page__footer__intro {
   align-items: flex-start;
 }
 
-/* .page__footer__column__imgs {
-  padding: 0;
-  gap: 0;
-  margin: 0;
-} */
   
 .page__footer__column__twitter-icon {
   width: 3rem;
