@@ -353,7 +353,7 @@ p {
 
     .m-2-3 {
       background-color: rgb(184, 184, 184);
-
+    }
     .page__footer__decoration {
       min-height: 1rem;
       column-gap: 0;
@@ -388,7 +388,7 @@ p {
 
   .m-2-3 {
     background-color: rgb(184, 184, 184);
-
+  }
    .page__footer__four-columns {
     align-items: flex-start;
     height: 100%;
@@ -469,7 +469,7 @@ p {
 
     .m-2-3 {
       background-color: rgb(184, 184, 184);
-
+    }
     .page__footer__four-columns {
       align-items: flex-start;
       height: 100%;
