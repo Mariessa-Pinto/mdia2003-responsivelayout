@@ -17,6 +17,7 @@
   4. STATES
   5. THEME
       1.1 Footer
+      1.2 Nav
   6. UTILITY CLASSES
   7. PRINT
 
@@ -114,11 +115,11 @@ main,
 section,
 footer,
 header {
-  outline: 1px solid #css;
+  outline: 1px solid #ccc;
   min-height: 1rem;
   padding: 1rem;
 
-} */ 
+}  */
 
 
 *,
@@ -164,8 +165,6 @@ p {
 
 .col {
 	position: relative;
-	background-color: rgb(242, 230, 177);
-
 }
 
 .logo {
@@ -174,6 +173,17 @@ p {
 }
 
 
+/* Our Latest Projects */
+
+.page__projects__headings-cont {
+  text-align: center;
+}
+
+/* Things of above */
+
+.page__misc__headings {
+  text-align: center;
+}
 
 /* main nav mobile first */
 .main-nav {
@@ -248,8 +258,6 @@ p {
     .row {
       max-width: 40rem;
       column-gap: 1.5rem;
-      row-gap: 1.5rem;
-      margin: 0 auto 5rem;
     }
     .logo {
       max-height: 5rem;
@@ -277,7 +285,6 @@ p {
       background-position: center center;
       background-color: #2a6eeb;
   }
-
   .page__footer__column__social-icon {
     padding: 1rem;
   }
@@ -286,6 +293,7 @@ p {
     min-height: 1rem;
     column-gap: 0;
   }
+
 
   
   
@@ -326,38 +334,48 @@ p {
   justify-content: left;
 }
 
+
+  .row2 {
+    row-gap: 1.5rem;
+    margin: 0 auto 5rem;
+  }
+  .page__projects__item {
+    padding: 0 3rem;
+  }
+  .page__projects__headings {
+    padding-bottom: 2rem;
+  }
+  .page__footer__column__pad {
+    padding: 1rem 1rem 5rem 1rem;
+  }
+
 }
 
 /* 2.3 Medium and up */
 
 @media screen and (min-width: 40em) {
     .row {
-
-      width: 80vw;
       max-width: 80rem;
-
       column-gap: 1.5rem;
-      row-gap: 1.5rem;
-      margin: 0 auto;
     }
-   
     .row-span {
       grid-column-start: 1;
       grid-column-end: -1;
     }
-
     .m-col-2 {
       grid-template-columns: 1fr 1fr;
     }
     .m-col-3 {
       grid-template-columns: repeat(3, 1fr);
     }
-
     .m-1-2 {
       grid-template-columns: 1fr 2fr;
     }
     .m-col-span-5 {
       grid-template-columns: 1fr 5fr;
+    }
+    .m-col-5 {
+      grid-template-columns: repeat(5, 1fr);
     }
     .m-col-8 {
       grid-template-columns: repeat(8, 1fr);
@@ -388,16 +406,13 @@ p {
       background-position-y: center;
       background-size: 2.3rem, 1.4rem;
     }
-
     .page__slider {
       background-color: rgb(184, 184, 184);
       margin-top: 0;
     }
     .m-2-1 {
       background-color: rgb(184, 184, 184);
-      
     }
-
     .m-2-3 {
       background-color: rgb(184, 184, 184);
     }
@@ -405,7 +420,20 @@ p {
       min-height: 1rem;
       column-gap: 0;
       padding: 0 3rem;
-
+    }
+    .row2 {
+      row-gap: 1.5rem;
+      width: 80vw;
+      margin: 0 auto;
+    }
+    .page__misc__sponsors {
+      padding: 3rem;
+    }
+    .page__projects__items {
+      padding: 1rem 3rem 3rem 3rem;
+    }
+    .page__footer__column__pad {
+      padding: 1rem;
     }
    
     .text {
@@ -436,7 +464,9 @@ p {
 
 @media screen and (min-width: 40em) and
 (max-width: 63.9375em) {
-  
+  .page__misc__tabs {
+    padding: 3rem;
+  }
   .m-hide {
     display: none;
   }
@@ -455,7 +485,6 @@ p {
     background-color: rgb(184, 184, 184);
     
   }
-
   .m-2-3 {
     background-color: rgb(184, 184, 184);
   }
@@ -468,7 +497,9 @@ p {
     padding: 3rem;
     align-items: flex-start;
     height: 100%;
-
+  }
+  .page__misc__accordion {
+    padding: 3rem;
   }
   .about {
     display: flex;
@@ -533,16 +564,12 @@ p {
     .page__footer__slider__image {
       max-width: 70rem;
     }
-
-
     .mobile-nav {
       display: none;
     }
     .m-1-2 {
       grid-template-columns: 1fr 2fr;
     }
-   
-   
     .main-nav {
       display: flex;
       flex-direction: row;
@@ -557,17 +584,13 @@ p {
       background-position-y: center;
       background-size: 2.3rem, 1.4rem;
     }
-
-
     .page__slider {
       background-color: rgb(184, 184, 184);
       margin-top: 0;
     }
     .m-2-1 {
-      background-color: rgb(184, 184, 184);
-      
+      background-color: rgb(184, 184, 184); 
     }
-
     .m-2-3 {
       background-color: rgb(184, 184, 184);
     }
@@ -580,8 +603,8 @@ p {
       padding: 3rem 3rem 3rem 1rem;
       align-items: flex-start;
       height: 100%;
-
     }
+
    
     .weDoImg {
       display: flex;
@@ -609,6 +632,13 @@ p {
     
     .main-heading {
       word-wrap: break-word;
+
+    .page__misc__tabs {
+      padding: 3rem 3rem 3rem 0;
+    }
+    .page__misc__accordion {
+      padding: 3rem 0rem 3rem 3rem;
+
     }
 }
 
@@ -616,12 +646,9 @@ p {
 
 @media screen and (min-width: 64em) and
 (max-width: 74.9375em) {
-    
-
   .m-1-2 {
       grid-template-columns: 1fr 2fr;
     }
-
     .page__slider {
      
       background-color: rgb(184, 184, 184);
@@ -631,11 +658,11 @@ p {
       background-color: rgb(184, 184, 184);
       
     }
-
     .m-2-3 {
       background-color: rgb(184, 184, 184);
      
     }
+
   
 
     .weDoImg {
@@ -665,41 +692,18 @@ p {
       flex-direction: column;
       align-items: center;
     }
+
 }
 
 
-
 /* ==========================================================================
-   THEME
+   3. Module
    ========================================================================== */
 
-   /* main nav colours and icons */
 
-   .main-nav__item:nth-child(1) {
-    background-color: #25c389;
-    background-image: url(../icons/house-chimney-solid.svg);
-   }
-
-   .main-nav__item:nth-child(2) {
-    background-color: #ffb901;
-    background-image: url(../icons/sitemap-solid.svg);
-   }
-
-   .main-nav__item:nth-child(3) {
-    background-color: #de6262;
-    background-image: url(../icons/bullhorn-solid.svg);
-   }
-
-   .main-nav__item:nth-child(4) {
-    background-color: #1691bd;
-    background-image: url(../icons/briefcase-solid.svg);
-   }
-
-   .main-nav__item:nth-child(5) {
-    background-color: #166ba2;
-    background-image: url(../icons/envelope-solid.svg);
-   }
-
+/* ==========================================================================
+   4. STATES
+   ========================================================================== */
 
 
 /* ==========================================================================
@@ -723,12 +727,6 @@ p {
   padding: 3rem;
 }
 
-/* .page__footer__column__lg {
-  padding: 0;
-  gap: 0;
-  margin: 0;
-} */
-
 
 .page__footer__column__news {
   padding: 1rem;
@@ -746,18 +744,6 @@ p {
   padding: 1rem;
 }
 
-/* .page__footer__column__socials {
-  padding: 0;
-  gap: 0;
-  margin: 0;
-  column-gap: 0;
-}
-
-.page__footer__column__newsletter {
-  padding: 0;
-  margin: 0;
-} */
-
 .page__footer__4-col {
   gap: 0;
 }
@@ -766,17 +752,10 @@ p {
   padding: 1rem;
 }
 
-.page__footer__column__pad {
-  padding: 1rem;
-}
-
 .page__footer__column__header {
   padding: 1rem;
 }
 
-/* .page__footer__column__twitter-feed__post {
-  padding: 0;
-} */
 
 .page__footer__scroll-header {
   text-align: left;
@@ -786,20 +765,11 @@ p {
   column-gap: 0;
 }
 
-/* .page___footer__column__img-col {
-  padding: 0;
-  margin: 0;
-} */
 
 .page__footer__intro {
   align-items: flex-start;
 }
 
-/* .page__footer__column__imgs {
-  padding: 0;
-  gap: 0;
-  margin: 0;
-} */
   
 .page__footer__column__twitter-icon {
   width: 3rem;
@@ -859,6 +829,34 @@ p {
  min-height: 1rem;
  padding: 0;
 }
+
+
+/* 1.2 Nav */
+
+.main-nav__item:nth-child(1) {
+  background-color: #25c389;
+  background-image: url(../icons/house-chimney-solid.svg);
+ }
+
+ .main-nav__item:nth-child(2) {
+  background-color: #ffb901;
+  background-image: url(../icons/sitemap-solid.svg);
+ }
+
+ .main-nav__item:nth-child(3) {
+  background-color: #de6262;
+  background-image: url(../icons/bullhorn-solid.svg);
+ }
+
+ .main-nav__item:nth-child(4) {
+  background-color: #1691bd;
+  background-image: url(../icons/briefcase-solid.svg);
+ }
+
+ .main-nav__item:nth-child(5) {
+  background-color: #166ba2;
+  background-image: url(../icons/envelope-solid.svg);
+ }
 
 
 /* ==========================================================================
