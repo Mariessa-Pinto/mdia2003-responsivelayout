@@ -16,8 +16,9 @@
   3. MODULES
   4. STATES
   5. THEME
-      1.1 Footer
-      1.2 Nav
+      5.1 Footer
+      5.2 Nav
+      5.3 What's Up Lately
   6. UTILITY CLASSES
   7. PRINT
 
@@ -299,13 +300,15 @@ p {
   .page__footer__column__pad {
     padding: 1rem 1rem 5rem 1rem;
   }
+  .page__updates__row {
+    padding: 3rem;
+   }
 }
 
 /* 2.3 Medium and up */
 
 @media screen and (min-width: 40em) {
     .row {
-      max-width: 80rem;
       column-gap: 1.5rem;
     }
     .row-span {
@@ -369,22 +372,26 @@ p {
     .page__footer__decoration {
       min-height: 1rem;
       column-gap: 0;
-      padding: 0 3rem;
+      padding: 0 5rem;
     }
     .row2 {
       row-gap: 1.5rem;
       width: 80vw;
       margin: 0 auto;
+      max-width: 80rem;
     }
     .page__misc__sponsors {
-      padding: 3rem;
+      padding: 3rem 5rem;
     }
     .page__projects__items {
-      padding: 1rem 3rem 3rem 3rem;
+      padding: 1rem 5rem 3rem 5rem;
     }
     .page__footer__column__pad {
       padding: 1rem;
     }
+    .page__updates__row {
+      padding: 5rem;
+     }
 }
 
 /* 2.4 Medium only */ 
@@ -392,7 +399,7 @@ p {
 @media screen and (min-width: 40em) and
 (max-width: 63.9375em) {
   .page__misc__tabs {
-    padding: 3rem;
+    padding: 3rem 5rem;
   }
   .m-hide {
     display: none;
@@ -418,22 +425,22 @@ p {
    .page__footer__four-columns {
     align-items: flex-start;
     height: 100%;
-    padding: 3rem;
+    padding: 3rem 5rem;
   }
   .page__footer__column {
-    padding: 3rem;
+    padding: 3rem 5rem;
     align-items: flex-start;
     height: 100%;
   }
   .page__misc__accordion {
-    padding: 3rem;
+    padding: 3rem 5rem;
   }
 }
 
 /* 2.5 Large screens and up */
 
 @media screen and (min-width: 64em) {
-    .row {
+    .row2 {
       max-width: 80rem;
     }
     .l-col-2 {
@@ -546,7 +553,7 @@ p {
 ========================================================================== */
 
 
-/* 1.1 Footer */
+/* 5.1 Footer */
 
 .page__footer {
   background-color: #16242f;
@@ -555,11 +562,11 @@ p {
 }
 
 .page__footer__intro {
-  padding: 3rem;
+  padding: 3rem 5rem;
 }
 
 .page__footer__slider__indicator {
-  padding: 3rem;
+  padding: 3rem 5rem;
 }
 
 
@@ -666,7 +673,7 @@ p {
 }
 
 
-/* 1.2 Nav */
+/* 5.2 Nav */
 
 .main-nav__item:nth-child(1) {
   background-color: #25c389;
@@ -692,6 +699,13 @@ p {
   background-color: #166ba2;
   background-image: url(../icons/envelope-solid.svg);
  }
+
+ /* 5.3 What's Up Lately */
+
+ .page__updates__column {
+  text-align: center;
+ }
+
 
 
 /* ==========================================================================
