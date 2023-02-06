@@ -17,6 +17,7 @@
   4. STATES
   5. THEME
       1.1 Footer
+      1.2 Nav
   6. UTILITY CLASSES
   7. PRINT
 
@@ -164,13 +165,23 @@ p {
 
 .col {
 	position: relative;
-	background-color: rgb(242, 230, 177);
-
 }
 
 .logo {
   max-height: 5rem;
   object-fit: cover;
+}
+
+/* Our Latest Projects */
+
+.page__projects__headings-cont {
+  text-align: center;
+}
+
+/* Things of above */
+
+.page__misc__headings {
+  text-align: center;
 }
 
 /* main nav mobile first */
@@ -279,6 +290,15 @@ p {
     row-gap: 1.5rem;
     margin: 0 auto 5rem;
   }
+  .page__projects__item {
+    padding: 0 3rem;
+  }
+  .page__projects__headings {
+    padding-bottom: 2rem;
+  }
+  .page__footer__column__pad {
+    padding: 1rem 1rem 5rem 1rem;
+  }
 }
 
 /* 2.3 Medium and up */
@@ -287,7 +307,6 @@ p {
     .row {
       max-width: 80rem;
       column-gap: 1.5rem;
-      margin: 0 auto;
     }
     .row-span {
       grid-column-start: 1;
@@ -304,6 +323,9 @@ p {
     }
     .m-col-span-5 {
       grid-template-columns: 1fr 5fr;
+    }
+    .m-col-5 {
+      grid-template-columns: repeat(5, 1fr);
     }
     .m-col-8 {
       grid-template-columns: repeat(8, 1fr);
@@ -352,6 +374,16 @@ p {
     .row2 {
       row-gap: 1.5rem;
       width: 80vw;
+      margin: 0 auto;
+    }
+    .page__misc__sponsors {
+      padding: 3rem;
+    }
+    .page__projects__items {
+      padding: 1rem 3rem 3rem 3rem;
+    }
+    .page__footer__column__pad {
+      padding: 1rem;
     }
 }
 
@@ -359,7 +391,9 @@ p {
 
 @media screen and (min-width: 40em) and
 (max-width: 63.9375em) {
-  
+  .page__misc__tabs {
+    padding: 3rem;
+  }
   .m-hide {
     display: none;
   }
@@ -390,7 +424,9 @@ p {
     padding: 3rem;
     align-items: flex-start;
     height: 100%;
-
+  }
+  .page__misc__accordion {
+    padding: 3rem;
   }
 }
 
@@ -464,6 +500,12 @@ p {
       align-items: flex-start;
       height: 100%;
     }
+    .page__misc__tabs {
+      padding: 3rem 3rem 3rem 0;
+    }
+    .page__misc__accordion {
+      padding: 3rem 0rem 3rem 3rem;
+    }
 }
 
 /* Large only */ 
@@ -489,38 +531,14 @@ p {
 }
 
 
-
 /* ==========================================================================
-   THEME
+   3. Module
    ========================================================================== */
 
-   /* main nav colours and icons */
 
-   .main-nav__item:nth-child(1) {
-    background-color: #25c389;
-    background-image: url(../icons/house-chimney-solid.svg);
-   }
-
-   .main-nav__item:nth-child(2) {
-    background-color: #ffb901;
-    background-image: url(../icons/sitemap-solid.svg);
-   }
-
-   .main-nav__item:nth-child(3) {
-    background-color: #de6262;
-    background-image: url(../icons/bullhorn-solid.svg);
-   }
-
-   .main-nav__item:nth-child(4) {
-    background-color: #1691bd;
-    background-image: url(../icons/briefcase-solid.svg);
-   }
-
-   .main-nav__item:nth-child(5) {
-    background-color: #166ba2;
-    background-image: url(../icons/envelope-solid.svg);
-   }
-
+/* ==========================================================================
+   4. STATES
+   ========================================================================== */
 
 
 /* ==========================================================================
@@ -566,10 +584,6 @@ p {
 }
 
 .page__footer__column__twitter-post {
-  padding: 1rem;
-}
-
-.page__footer__column__pad {
   padding: 1rem;
 }
 
@@ -650,6 +664,34 @@ p {
  min-height: 1rem;
  padding: 0;
 }
+
+
+/* 1.2 Nav */
+
+.main-nav__item:nth-child(1) {
+  background-color: #25c389;
+  background-image: url(../icons/house-chimney-solid.svg);
+ }
+
+ .main-nav__item:nth-child(2) {
+  background-color: #ffb901;
+  background-image: url(../icons/sitemap-solid.svg);
+ }
+
+ .main-nav__item:nth-child(3) {
+  background-color: #de6262;
+  background-image: url(../icons/bullhorn-solid.svg);
+ }
+
+ .main-nav__item:nth-child(4) {
+  background-color: #1691bd;
+  background-image: url(../icons/briefcase-solid.svg);
+ }
+
+ .main-nav__item:nth-child(5) {
+  background-color: #166ba2;
+  background-image: url(../icons/envelope-solid.svg);
+ }
 
 
 /* ==========================================================================
