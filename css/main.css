@@ -173,11 +173,7 @@ p {
   object-fit: cover;
 }
 
-.columnA {
-  margin-left: 10%;
-  display: flex;
-  justify-content: center;
-}
+
 
 /* main nav mobile first */
 .main-nav {
